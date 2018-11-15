@@ -71,7 +71,6 @@ public class Graph<LinePlotTest> extends JFrame {
 		for(double x=p1 ;x <= p2; x+=eps) {
 			double t=dv.f(x+eps) * dv.f(x-eps) ;
 			if(t<0) {
-				System.out.println("----");
 				min_max.add(new Min_Max(x, p.f(x)));
 			}
 		}

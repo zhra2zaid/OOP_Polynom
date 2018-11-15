@@ -50,6 +50,10 @@ public class Graph<LinePlotTest> extends JFrame {
 		plot.getLineRenderers(data).get(0).setColor(color);
 
 	}
+	
+	/**
+	 * This Function it's to find the area by the formula of Riemann's Integr.
+	 */
 	public  double area(Polynom p , double p1 , double p2 ) {
 		double eps=0.01;
 		double sum=0;
@@ -64,6 +68,10 @@ public class Graph<LinePlotTest> extends JFrame {
 		return Math.abs(sum);
 
 	}
+	
+	/**
+	 * This Function it's to find the Extreme Points.
+	 */
 	public  void find(Polynom p , double p1 , double p2 , double eps) {
 		DataTable data_find = new DataTable(Double.class, Double.class);
 		Polynom dv = (Polynom) p.derivative();

@@ -45,6 +45,10 @@ public class Monom implements function{
 			try {
 				throw new Exception("The input isn't good");
 			} catch (Exception e) {e.printStackTrace();	}}
+		else if((!input.contains("*"))   && (input.contains("x"))&& (input.length()>1)  && (input.charAt(0)!='x') && (input.charAt(0)!='-')) {
+			try {
+				throw new Exception("The input isn't good");
+			} catch (Exception e) {e.printStackTrace();	}}
 		
 		String[] Monom_arr;
 		if((input.contains("*") && input.contains("x"))  ) {

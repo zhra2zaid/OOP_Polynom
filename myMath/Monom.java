@@ -104,7 +104,12 @@ public class Monom implements function{
 	public void derivative() {
 		// TODO Auto-generated method stub
 		this._coefficient*=this._power;
+		if (this._power == 0) {
+			this._coefficient =0;
+		}
+		else {
 		this.set_power(--this._power);
+		}
 	}
 
 
